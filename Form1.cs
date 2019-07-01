@@ -39,19 +39,19 @@ namespace RUSSIAN_ROULETTE
             btn_Shootaway.Enabled = false;
             //coding for image//
             Assembly myAssembly = Assembly.GetExecutingAssembly();
-            Stream mystream = myAssembly.GetManifestResourceStream("RUSSIAN_ROULETTE.Resources.gun.jpg");
+            Stream mystream = myAssembly.GetManifestResourceStream("RUSSIAN_ROULETTE.Resources.spinpic.jpg");
             Bitmap bmp = new Bitmap(mystream);
 
-            //var bmp = new Bitmap(RUSSIAN_ROULETTE.properties.Resources.gun);
+            //var bmp = new Bitmap(RUSSIAN_ROULETTE.properties.Resources.spinpic);
             pictureBox1.Image = bmp;
-            // Image.FromFile(RUSSIAN_ROULETTE.Resources.gun);
+            // Image.FromFile(RUSSIAN_ROULETTE.Resources.spinpic);
 
         }
 
         private void Btn_Spin_Click(object sender, EventArgs e)
         {
             //coding for sound//
-            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(RUSSIAN_ROULETTE.Properties.Resources.spinSound);
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(RUSSIAN_ROULETTE.Properties.Resources.spin);
             snd.Play();
             //Calling Spin function from Game Class
             btn_Load.Enabled = false;
@@ -60,12 +60,12 @@ namespace RUSSIAN_ROULETTE
             btn_Shootaway.Enabled = true;
             //coding for image//
             Assembly myAssembly = Assembly.GetExecutingAssembly();
-            Stream mystream = myAssembly.GetManifestResourceStream("RUSSIAN_ROULETTE.Resources.spinpic.jpg");
+            Stream mystream = myAssembly.GetManifestResourceStream("RUSSIAN_ROULETTE.Resources.gun.jpg");
             Bitmap bmp = new Bitmap(mystream);
 
-            //var bmp = new Bitmap(RUSSIAN_ROULETTE.properties.Resources.spinpic);
+            //var bmp = new Bitmap(RUSSIAN_ROULETTE.properties.Resources.gun);
             pictureBox1.Image = bmp;
-            // Image.FromFile(RUSSIAN_ROULETTE.Resources.spinpic);
+            // Image.FromFile(RUSSIAN_ROULETTE.Resources.gun);
 
         }
 
@@ -118,6 +118,11 @@ namespace RUSSIAN_ROULETTE
             btn_Spin.Enabled = false;
             btn_Shoot.Enabled = false;
             btn_Shootaway.Enabled = false;
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+             
         }
     }
 }

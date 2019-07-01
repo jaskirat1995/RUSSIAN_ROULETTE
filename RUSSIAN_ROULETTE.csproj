@@ -113,5 +113,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\shootawaysound.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\spin.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
