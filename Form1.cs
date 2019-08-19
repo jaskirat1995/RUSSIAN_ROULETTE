@@ -87,6 +87,7 @@ namespace RUSSIAN_ROULETTE
 
             //var bmp = new Bitmap(RUSSIAN_ROULETTE.properties.Resources.shoot);
             pictureBox1.Image = bmp;
+            MessageBox.Show("you lose the game try next time");
             // Image.FromFile(RUSSIAN_ROULETTE.Resources.shoot);
         }
 
@@ -107,6 +108,7 @@ namespace RUSSIAN_ROULETTE
 
             //var bmp = new Bitmap(RUSSIAN_ROULETTE.properties.Resources.shootaway);
             pictureBox1.Image = bmp;
+            MessageBox.Show("you won the game and got 100 points");
             // Image.FromFile(RUSSIAN_ROULETTE.Resources.shootaway);
         }
 

@@ -119,7 +119,7 @@
             this.Controls.Add(this.btn_Spin);
             this.Controls.Add(this.btn_Load);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "j";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
