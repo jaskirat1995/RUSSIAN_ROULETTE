@@ -66,16 +66,16 @@ namespace RUSSIAN_ROULETTE
             //var bmp = new Bitmap(RUSSIAN_ROULETTE.properties.Resources.gun);
             pictureBox1.Image = bmp;
             // Image.FromFile(RUSSIAN_ROULETTE.Resources.gun);
-
+         
         }
 
         private void Btn_Shoot_Click(object sender, EventArgs e)
 
         { //coding for sound//
-            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(RUSSIAN_ROULETTE.Properties.Resources.shoot);
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(RUSSIAN_ROULETTE.Properties.Resources.shootawaysound);
             snd.Play();
 
-            //Calling Shoot function from Game Class
+            //Calling Shoot function from Game Class//
             btn_Load.Enabled = false;
             btn_Spin.Enabled = false;
             btn_Shoot.Enabled = true;
@@ -94,7 +94,7 @@ namespace RUSSIAN_ROULETTE
         private void Btn_Shootaway_Click(object sender, EventArgs e)
         {
             //coding for sound//
-            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(RUSSIAN_ROULETTE.Properties.Resources.shootawaysound);
+            System.Media.SoundPlayer snd = new System.Media.SoundPlayer(RUSSIAN_ROULETTE.Properties.Resources.shoot);
             snd.Play();
             //Calling Shoot Away function from Game Class
             btn_Load.Enabled = false;

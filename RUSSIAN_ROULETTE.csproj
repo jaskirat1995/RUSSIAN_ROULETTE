@@ -70,6 +70,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Resources\gun.jpg" />
+    <EmbeddedResource Include="Resources\shoot.jpg" />
+    <EmbeddedResource Include="Resources\shootaway.jpg" />
+    <EmbeddedResource Include="Resources\shootawaysound.wav" />
+    <EmbeddedResource Include="Resources\spinpic.jpg" />
+    <EmbeddedResource Include="Resources\spinSound.wav" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -79,45 +85,14 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\ImageTemplate_RussianRoulette_large.png" />
+    <None Include="Resources\index.jpg" />
+    <None Include="Resources\machine.wav" />
+    <None Include="Resources\russian-roulette-shutterstock.jpeg" />
+    <None Include="Resources\spin.wav" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ImageTemplate_RussianRoulette_large.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\gun.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\machine.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\index.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\russian-roulette-shutterstock.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\spinSound.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\shoot.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\shoot.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\spinpic.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\shootaway.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\shootawaysound.wav" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\spin.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
