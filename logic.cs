@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-    class logic
+   public class logic
     {
     public class RUSSIAN_ROULETTE
     {
@@ -55,7 +55,7 @@ using System.Threading.Tasks;
         /// returns random integer between 1 to 6
         /// </summary>
         /// <returns></returns>
-        private int GetRandomPosition()
+        public int GetRandomPosition()
         {
             Random random = new Random();
             return random.Next(1, 7);
@@ -113,7 +113,11 @@ using System.Threading.Tasks;
     
         }
 
+    public object GetRandomPosition(int v)
+    {
+        throw new NotImplementedException();
     }
+}
 
 
 

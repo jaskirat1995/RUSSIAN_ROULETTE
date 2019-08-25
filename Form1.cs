@@ -32,11 +32,11 @@ namespace RUSSIAN_ROULETTE
             //coding for sound//
             System.Media.SoundPlayer snd = new System.Media.SoundPlayer(RUSSIAN_ROULETTE.Properties.Resources.machine);
             snd.Play();
-            //Calling Load function from Game Class
-            btn_Load.Enabled = false; // Disabling Load button
-            btn_Spin.Enabled = true;
-            btn_Shoot.Enabled = false;
-            btn_Shootaway.Enabled = false;
+            //coding for Load button//
+            btn_Load.Enabled = false; // Disabling Load button //
+            btn_Spin.Enabled = true; // enable the spin button //
+            btn_Shoot.Enabled = false; // disable the shoot button //
+            btn_Shootaway.Enabled = false;//disable the shootaway button //
             //coding for image//
             Assembly myAssembly = Assembly.GetExecutingAssembly();
             Stream mystream = myAssembly.GetManifestResourceStream("RUSSIAN_ROULETTE.Resources.spinpic.jpg");
@@ -53,11 +53,12 @@ namespace RUSSIAN_ROULETTE
             //coding for sound//
             System.Media.SoundPlayer snd = new System.Media.SoundPlayer(RUSSIAN_ROULETTE.Properties.Resources.spin);
             snd.Play();
-            //Calling Spin function from Game Class
-            btn_Load.Enabled = false;
-            btn_Spin.Enabled = false;
-            btn_Shoot.Enabled = true;
-            btn_Shootaway.Enabled = true;
+            //Coding for Spin button//
+            btn_Load.Enabled = false;// disable the load button //
+            btn_Spin.Enabled = false;// disable the spin button //
+            btn_Shoot.Enabled = true;// enabled the shoot button //
+            btn_Shootaway.Enabled = true;// enabled the shootaway //
+
             //coding for image//
             Assembly myAssembly = Assembly.GetExecutingAssembly();
             Stream mystream = myAssembly.GetManifestResourceStream("RUSSIAN_ROULETTE.Resources.gun.jpg");
@@ -75,11 +76,11 @@ namespace RUSSIAN_ROULETTE
             System.Media.SoundPlayer snd = new System.Media.SoundPlayer(RUSSIAN_ROULETTE.Properties.Resources.shootawaysound);
             snd.Play();
 
-            //Calling Shoot function from Game Class//
-            btn_Load.Enabled = false;
-            btn_Spin.Enabled = false;
-            btn_Shoot.Enabled = true;
-            btn_Shootaway.Enabled = true;
+            //coding for Shoot button////
+            btn_Load.Enabled = false;// disabled the load button //
+            btn_Spin.Enabled = false;// disabled the spin button //
+            btn_Shoot.Enabled = true;// enabled the shoot button //
+            btn_Shootaway.Enabled = true;//enabled the shootaway button //
             //coding for image//
             Assembly myAssembly = Assembly.GetExecutingAssembly();
             Stream mystream = myAssembly.GetManifestResourceStream("RUSSIAN_ROULETTE.Resources.shoot.jpg");
@@ -96,11 +97,13 @@ namespace RUSSIAN_ROULETTE
             //coding for sound//
             System.Media.SoundPlayer snd = new System.Media.SoundPlayer(RUSSIAN_ROULETTE.Properties.Resources.shoot);
             snd.Play();
-            //Calling Shoot Away function from Game Class
-            btn_Load.Enabled = false;
-            btn_Spin.Enabled = false;
-            btn_Shoot.Enabled = true;
-            btn_Shootaway.Enabled = true;
+            //Coding for Shootaway button// 
+            btn_Load.Enabled = false;// disabled the load button//
+            btn_Spin.Enabled = false;// disabled the spin button//
+            btn_Shoot.Enabled = true;// enabled the shoot button//
+            btn_Shootaway.Enabled = true;// enabled the shootaway button//
+
+
             //coding for image//
             Assembly myAssembly = Assembly.GetExecutingAssembly();
             Stream mystream = myAssembly.GetManifestResourceStream("RUSSIAN_ROULETTE.Resources.shootaway.jpg");
@@ -111,7 +114,8 @@ namespace RUSSIAN_ROULETTE
             MessageBox.Show("you won the game and got 100 points");
             // Image.FromFile(RUSSIAN_ROULETTE.Resources.shootaway);
         }
-
+        
+        // coding for Playagain //
         private void Btn_playagain_Click(object sender, EventArgs e)
         {
             this.Controls.Clear();
